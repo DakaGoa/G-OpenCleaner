@@ -4,6 +4,20 @@ A modern, open-source PC cleaner and maintenance suite for Windows — the featu
 commercial cleaner, rebuilt from scratch, released into the public domain, and with no
 activation, upsells or telemetry.
 
+## Install
+
+[**Download `G-OpenCleanerSetup.exe` — v1.0.0**](https://github.com/DakaGoa/G-OpenCleaner/releases/download/v1.0.0/G-OpenCleanerSetup.exe)
+
+Run it. No administrator prompt is needed: it installs per user to
+`%LOCALAPPDATA%\Programs\G-OpenCleaner`, adds a Start-menu entry and a desktop shortcut, and
+registers **G-OpenCleaner** in Settings → Apps with a working uninstall command.
+
+The installer is **not code-signed**, so Windows SmartScreen shows its
+"Windows protected your PC" warning the first time you run it. Choose **More info → Run
+anyway** to continue. The warning appears because the binary carries no publisher certificate,
+not because of anything it does — and you can always skip it by building from this source with
+`build.cmd` instead.
+
 ## Native Windows app (Rust)
 
 The product is a native Win32 window built with `eframe`/`egui` — no WebView2, no browser,
