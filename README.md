@@ -18,6 +18,11 @@ anyway** to continue. The warning appears because the binary carries no publishe
 not because of anything it does — and you can always skip it by building from this source with
 `build.cmd` instead.
 
+Nothing has to be installed: the app is one self-contained exe with no runtime dependencies, so
+run `native\target\release\openclean.exe` straight after a `build.cmd`, or copy
+`G-OpenCleaner.exe` out of the installed folder and run it from anywhere. Settings, statistics
+and quarantine live in `%LOCALAPPDATA%\OpenClean`, so both behave the same as an installed copy.
+
 ## Native Windows app (Rust)
 
 The product is a native Win32 window built with `eframe`/`egui` — no WebView2, no browser,
