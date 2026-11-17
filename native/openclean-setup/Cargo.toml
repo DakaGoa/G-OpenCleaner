@@ -1,0 +1,15 @@
+[package]
+name = "openclean-setup"
+version = "1.0.0"
+edition = "2021"
+description = "Installer and uninstaller for G-OpenCleaner"
+license = "Unlicense"
+build = "build.rs"
+
+[[bin]]
+name = "OpenCleanSetup"
+path = "src/main.rs"
+
+[dependencies]
+eframe = "=0.29.1"
+winreg = "0.52"

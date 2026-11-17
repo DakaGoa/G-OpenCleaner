@@ -1,0 +1,33 @@
+[package]
+name = "openclean"
+version = "1.0.0"
+edition = "2021"
+description = "Native, open-source PC cleaner for Windows"
+license = "Unlicense"
+
+[[bin]]
+name = "openclean"
+path = "src/main.rs"
+
+[dependencies]
+eframe = "=0.29.1"
+# Only pulled in by the `capture` review feature (PNG encoder).
+image = { version = "0.25", default-features = false, features = ["png"], optional = true }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+winreg = "0.52"
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_Threading",
+    "Win32_System_ProcessStatus",
+    "Win32_System_DataExchange",
+    "Win32_UI_Shell",
+    "Win32_System_Registry",
+] }
+
+[features]
+default = []
+# Review-only screen-capture tour: OPENCLEAN_CAPTURE=<dir> writes one PNG per screen.
+# Never enabled in the shipped build, so release binaries stay a plain cleaner.
+capture = ["dep:image"]

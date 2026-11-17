@@ -1,0 +1,10 @@
+node_modules/
+data/
+*.log
+.DS_Store
+Thumbs.db
+native/target/
+native/shots/
+native/openclean-setup/assets/openclean.exe
+dist/
+.freebuff/

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="x-cc-token" content="__OPEN_CLEAN_TOKEN__" />
+    <title>OpenClean</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234f8cff'/%3E%3Cpath d='M10 16.5l4 4 8-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="brand-text">
+            <strong>OpenClean</strong>
+            <span id="brand-version">v1.0.0</span>
+          </div>
+        </div>
+
+        <nav class="nav" id="nav" aria-label="Main"></nav>
+
+        <div class="sidebar-foot">
+          <div class="pc-card" id="pc-card">
+            <div class="pc-row">
+              <span class="dot" id="admin-dot"></span>
+              <span id="pc-name">This PC</span>
+            </div>
+            <div class="pc-bar"><span id="disk-bar"></span></div>
+            <small id="pc-disk">Reading drive…</small>
+          </div>
+          <button class="ghost-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M12 3a9 9 0 109 9 7 7 0 01-9-9z" fill="currentColor"/></svg>
+            <span>Theme</span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="topbar-title">
+            <h1 id="page-title">Health Check</h1>
+            <p id="page-subtitle">Scan this PC and fix what holds it back.</p>
+          </div>
+          <div class="topbar-actions" id="topbar-actions"></div>
+        </header>
+        <div class="content" id="view" tabindex="-1"></div>
+      </main>
+    </div>
+
+    <div class="toasts" id="toasts" aria-live="polite"></div>
+    <div class="modal-root" id="modal-root"></div>
+
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>

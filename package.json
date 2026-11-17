@@ -1,0 +1,15 @@
+{
+  "name": "openclean",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OpenClean - a modern, open-source PC cleaner and maintenance suite for Windows.",
+  "license": "Unlicense",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "check": "node --check server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
