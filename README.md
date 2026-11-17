@@ -6,7 +6,7 @@ activation, upsells or telemetry.
 
 ## Install
 
-[**Download `G-OpenCleanerSetup.exe` — v1.0.0**](https://github.com/DakaGoa/G-OpenCleaner/releases/download/v1.0.0/G-OpenCleanerSetup.exe)
+[**Download `G-OpenCleanerSetup.exe`**](https://github.com/DakaGoa/G-OpenCleaner/releases/latest/download/G-OpenCleanerSetup.exe) — always the latest release.
 
 Run it. No administrator prompt is needed: it installs per user to
 `%LOCALAPPDATA%\Programs\G-OpenCleaner`, adds a Start-menu entry and a desktop shortcut, and
